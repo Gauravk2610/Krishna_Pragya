@@ -144,7 +144,7 @@ const Footer = () => {
   ];
   return (
     <div className="linear-bg flex flex-col py-14 px-16 text-white">
-      <div className="flex flex-wrap max-w-7xl ml-auto w-full justify-evenly gap-x-6 gap-y-3">
+      <div className="flex flex-wrap max-w-[85vw] ml-auto w-full justify-evenly gap-x-6 gap-y-3">
         {/* Subscribe For More */}
         {/* <div className="space-y-2 max-w-xs w-full">
           <div>SUBSCRIBE FOR MORE</div>
