@@ -1,0 +1,1 @@
+export const isEnglish = (lang) => lang === 'English';

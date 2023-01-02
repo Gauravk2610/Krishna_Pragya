@@ -1,13 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@layer components {
+  .menu-item {
+    @apply text-white cursor-pointer px-2 uppercase font-bold text-xl hover:text-[#ffbe00];
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.linear-bg {
+  background:  linear-gradient(271deg, #42AD77 0%, #0072A4 100%) 0% 0% no-repeat padding-box;
+}
+
+.section2 {
+  background: url(./assets/Pilgrim.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section3 {
+  background: url(./assets/Krishna_pragya.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.krishn-pragya-btn {
+  box-shadow: 0px 3px 6px #3B3B3B5C;
+  background: transparent linear-gradient(270deg, #42AD77 0%, #0072A4 100%) 0% 0% no-repeat padding-box;
+}
+
+.section4 {
+  background: url(./assets/TATAVAMASI.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.krishn-pragya-linear-gradient {
+  background: transparent linear-gradient(90deg, #CEE1ED 0%, #D9EEE5 100%) 0% 0% no-repeat padding-box;
+}
+
+.vol {
+  transform: matrix(0.99, -0.12, 0.10, 0.99, 0, 0);
+}
+
+.visison_mission {
+  background: url(./assets/Vision_Mission.png) no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+}
+
+/* input[type=range]::-webkit-slider-thumb {
+  background-color: red;
+}
+input[type=range]::-moz-range-thumb {
+  background-color: red;
+}
+input[type=range]::-ms-thumb {
+  background-color: red;
+} */
+
+/***** These are to edit the thumb and the text inside the thumb *****/
+/* input[type=range] + .thumb {
+  background-color: #dedede;
+}
+input[type=range] + .thumb.active .value {
+  color: red;
+} */
+
+.team_linear_bg {
+  background: transparent linear-gradient(90deg, #CEE1ED 0%, #D9EEE5 100%) 0% 0% no-repeat padding-box;
+}
+
+.courtesy {
+  transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.subscribe_button {
+  background:  linear-gradient(270deg, #42AD77 0%, #0072A4 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #3B3B3B5C;
 }
