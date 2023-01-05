@@ -1,11 +1,17 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { isEnglish } from "../utils";
 
 const Videos = () => {
+  const language = useSelector((state) => state.language.value);
+
+  const isEng = isEnglish(language);
+
   return (
     <div className="min-h-screen bg-white py-12">
       <div className="max-w-7xl w-full mx-4 xl:mx-auto space-y-6">
         <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
-          Videos
+          {isEng ? "Videos" : "वीडियो"}
         </h1>
         {/* Videos List */}
         <div className="flex gap-x-4 gap-y-6 flex-wrap">

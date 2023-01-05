@@ -31,19 +31,19 @@ const Header = () => {
       link: "/conversations",
       subMenu: [
         {
-          name: "KRISHN'S WHISPERING",
+          name: isEng ? "KRISHN'S WHISPERING" : "कृष्ण संवाद",
           link: "/krishn's-whispering",
         },
         {
-          name: "WHITE WINGS (BLOG)",
+          name: isEng ? "WHITE WINGS (BLOG)" : "श्वेत पंख (ब्लॉग)",
           link: "/blogs",
         },
         {
-          name: "FORUM",
+          name: isEng ? "FORUM" : "फोरम",
           link: "/forum",
         },
         {
-          name: "CONNECT",
+          name: isEng ? "CONNECT" : "कनेक्ट करें",
           link: "/connect",
         },
       ],
@@ -177,7 +177,7 @@ const Header = () => {
             ) : (
               <Link
                 key={index}
-                to={`${item?.link}`}
+                to={item.subMenu ? "#" : `${item?.link}`}
                 // submenu visible on hover css
                 className="menu-item relative menu"
               >

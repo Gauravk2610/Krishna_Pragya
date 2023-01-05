@@ -1,59 +1,64 @@
 import React, { useRef } from "react";
 import ChevronLeft from "@heroicons/react/24/outline/ChevronLeftIcon";
 import ChevronRight from "@heroicons/react/24/outline/ChevronRightIcon";
-
-
-const PaintingsList = [
-  {
-    painter: "ARTIST - KESHAV VENKATERAGAVAN",
-    desc: "Famous painter of modern contemporary art form",
-    image: [
-      {
-        img: 'Image 1'
-      },
-      {
-        img: 'Image 2'
-      },
-      {
-        img: 'Image 3'
-      },
-      {
-        img: 'Image 4'
-      },
-      {
-        img: 'Image 5'
-      },
-    ]
-  },
-  {
-    painter: "ARTIST - PRANAY GOSWAMI",
-    desc: "Famous and Popular artist of modern art form paintings",
-    image: [
-      {
-        img: 'Image 6'
-      },
-      {
-        img: 'Image 7'
-      },
-      {
-        img: 'Image 8'
-      },
-      {
-        img: 'Image 9'
-      },
-      {
-        img: 'Image 10'
-      },
-    ]
-  },
-]
+import { useSelector } from "react-redux";
+import { isEnglish } from "../utils";
 
 const Paintings = () => {
+  const language = useSelector((state) => state.language.value);
+  
+  const isEng = isEnglish(language);
+  
+  const PaintingsList = [
+    {
+      painter: isEng ?  "ARTIST - KESHAV VENKATERAGAVAN" : "चित्रकार - केशव वेंकटरागवन",
+      desc: isEng ? "Famous painter of modern contemporary art form" : "आधुनिक समकालीन कला के प्रसिद्ध चित्रकार",
+      image: [
+        {
+          img: 'Image 1'
+        },
+        {
+          img: 'Image 2'
+        },
+        {
+          img: 'Image 3'
+        },
+        {
+          img: 'Image 4'
+        },
+        {
+          img: 'Image 5'
+        },
+      ]
+    },
+    {
+      painter: isEng ? "ARTIST - PRANAY GOSWAMI" : "चित्रकार - प्रणय गोस्वामी",
+      desc: isEng ? "Famous and Popular artist of modern art form paintings" : "आधुनिक कला के प्रसिद्ध और लोकप्रिय कलाकार",
+      image: [
+        {
+          img: 'Image 6'
+        },
+        {
+          img: 'Image 7'
+        },
+        {
+          img: 'Image 8'
+        },
+        {
+          img: 'Image 9'
+        },
+        {
+          img: 'Image 10'
+        },
+      ]
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-white py-12">
       <div className="max-w-7xl w-full mx-4 xl:mx-auto space-y-8">
         <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
-          Paintings
+          {isEng ? "Paintings" : "पेंटिंग्स"}
         </h1>
         {
           PaintingsList?.map((_, i) => (

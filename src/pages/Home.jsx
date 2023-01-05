@@ -250,7 +250,7 @@ const Home = () => {
               {isEng ? "PARABLES ZONE" : "सुन रे मनवा"}
             </button>
             <button className="krishn-pragya-btn min-w-[160px] px-6 h-11 rounded-xl text-center text-white font-semibold">
-              {isEng ? "BUBBLES & BALLOONS" : "सुन रे मनवा"}
+              {isEng ? "BUBBLES & BALLOONS" : "क्षण तरंग"}
             </button>
           </div>
         </div>

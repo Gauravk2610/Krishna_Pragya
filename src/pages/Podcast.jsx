@@ -1,10 +1,18 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { isEnglish } from "../utils";
 
 const Podcast = () => {
+  const language = useSelector((state) => state.language.value);
+
+  const isEng = isEnglish(language);
+
   return (
     <div className="min-h-screen bg-white py-12">
       <div className="max-w-7xl w-full mx-4 xl:mx-auto space-y-6">
-        <h1 className="uppercase text-[#2E6295] text-4xl font-bold">Podcast</h1>
+        <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
+          {isEng ? "Podcast" : "पॉडकास्ट"}
+        </h1>
         {/* Podcast List */}
         <div className="flex flex-col gap-y-6 w-full">
           {/* Podcast */}
@@ -23,7 +31,12 @@ const Podcast = () => {
                   </div>
                   <div className="flex items-center w-full">
                     {/* thumbar color change to red */}
-                    <input type="range" min="0" max="100" className="w-full border-none outline-none h-1 !bg-black " />
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      className="w-full border-none outline-none h-1 !bg-black "
+                    />
                   </div>
                 </div>
               </div>

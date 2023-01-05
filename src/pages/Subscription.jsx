@@ -1,4 +1,6 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
+import { isEnglish } from '../utils';
 
 const SubscriptionModel = [
   {
@@ -153,12 +155,16 @@ const InternationalSubscriptionModel = [
 
 
 const Subscription = () => {
+  const language = useSelector((state) => state.language.value);
+
+  const isEng = isEnglish(language);
+
   return (
     <div className='min-h-screen bg-white py-4'>
         <div className='max-w-6xl w-full mx-4 xl:mx-auto'>
           {/* Indian Subscription model */}
           <div className='mt-6 space-y-4'>
-            <h1 className='text-3xl text-center font-bold'>SUBSCRIPTION FOR INDIAN KRISHN'S LOVERS</h1>
+            <h1 className='text-3xl text-center font-bold'>{isEng ? `SUBSCRIPTION FOR INDIAN KRISHN'S LOVERS` : `भारत में रहने वाले कृष्ण प्रेमियों के लिए सब्सक्राइब`}</h1>
             <div className='border-2 border-black border-b-0'>
               {
                 SubscriptionModel.map((item) => (
@@ -185,7 +191,11 @@ const Subscription = () => {
           </div>
           {/* International Subscription model */}
           <div className='mt-6 space-y-4'>
-            <h1 className='text-3xl text-center font-bold'>SUBSCRIPTION FOR INTERNATIONAL KRISHN'S LOVERS</h1>
+            <h1 className='text-3xl text-center font-bold'>
+              {
+                isEng ? `SUBSCRIPTION FOR INTERNATIONAL KRISHN'S LOVERS` : `भारत के अलावा अन्य देशों में रहने वाले कृष्ण प्रेमियों के लिए सब्सक्राइब`
+              }
+            </h1>
             <div className='border-2 border-black border-collapse border-b-0'>
               {
                 InternationalSubscriptionModel.map((item) => (

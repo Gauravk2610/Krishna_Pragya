@@ -9,12 +9,12 @@ const KrishnPragyaDetails = () => {
 
   const bookList = {
     "Vol 1": {
-      name: "Vol 1",
-      img: "Book 1@2x",
-      date: "Oct 2022",
+      name: isEng ? 'Vol 1' : "खंड 1",
+      img: isEng ? "Book 1@2x" : "Book 1 Hindi@2x",
+      date: isEng ? "Oct 2022" : "अक्टूबर 2022",
       content: isEng
         ? `Shri Krishn is not a figment of a dreamy mind but a living reality. He is symbolized through symbols but he himself is not a symbol. He is the Supreme. He attracts in all forms, loves, captivates but does not get himself captivated ! Shri Krishn is so learned that he can reveal the mysteries of Vedanta through the strains of his flute. Whatever path he traverses on, he leaves indelible footprints of his aureate memories behind for ages to follow but he himself remains detached from the show. Each of his actions is replete with mysteries and is as arcane as the curiosity about his next move ! Life lies in his consciousness. Krishn is everywhere: Be that his beloved Braj bhoomi or the blessed Goloka , be that his magical flute or peacock feather or the bank of Yamuna, be that his dear Kadamba tree, mount Govardhan or Holy Vrindavan, be that his many names and forms, his Pitambar or the Vaijayanti around his neck.`
-        : "",
+        : "कृष्ण स्वप्निल मन की परिकल्पना नहीं, वे साक्षात् हैं. प्रतीकों में दिखते अवश्य हैं परंतु प्रतीक नहीं हैं. वे सर्वोच्च हैं। कृष्ण हर रूप में आकर्षित करते हैं, प्रेम लुटाते हैं, परंतु बँधते नहीं हैं. सच में निर्मोही हैं. इतने ज्ञानी कि वेदांत के सिद्धांत बांसुरी के सुरों में ढाल दें। जिस पथ से गुजरते हैं उसकी स्मृतियों के स्वर्णिम क्षण जन जन के मानस में अंकित कर देते हैं और स्वयं अनासक्त रहते हैं। उनकी हर बात में उतना ही रहस्य है जितना इसमें कि वे अगले पल क्या करेंगे! उनके भाव में जीवन की समग्रता है। फिर चाहे वह उनकी ब्रज भूमि हो या गोलोक, बाँसुरी हो या मयूर पंख, यमुना हो या कदम्ब के वृक्ष, गोवर्धन हो या वृंदावन, उनके अनेक नाम हों या उनके रूप, आयुध हों या पीताम्बर और वैजयंती। ‘कृष्ण प्रज्ञा’ का प्रथम अंक जिसे ‘परिचय विशेषांक’ माना गया है, इसमें भारत के उत्कृष्ट विद्वानों की लेखनी से निकले शब्द कृष्ण के प्रतीकों से हमारा परिचय करायेंगे और हमारे चिंतन को एक नयी दिशा देंगे।",
     },
     "Vol 2": {
       name: isEng ? "Vol 2" : 'खंड 2',
