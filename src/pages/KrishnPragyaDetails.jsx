@@ -50,7 +50,7 @@ const KrishnPragyaDetails = () => {
           >
             {bookList[vol]?.content}
           </p>
-          <button className={`krishn-pragya-btn rounded-xl py-2 px-4 uppercase text-white font-bold text-lg max-w-[160px] w-full `}>
+          <button className={`krishn-pragya-btn rounded-xl py-2 px-4 uppercase text-white font-bold text-base sm:text-lg max-w-[160px] w-full `}>
             {isEng ? 'Read Articals' : 'लेख पढ़ें'}
           </button>
         </div>

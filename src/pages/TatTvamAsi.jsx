@@ -50,17 +50,17 @@ const TatTvamAsi = () => {
 
   return (
     <div className="min-h-screen bg-white py-4">
-      <div className="max-w-7xl w-full mx-4 mt-8 xl:mx-auto">
+      <div className="max-w-7xl w-full px-6 mt-8 xl:mx-auto">
         {/* <img className='max-w-lg pt-6' src='/assets/Quote.png' /> */}
-        <div className="flex space-x-4 justify-between">
-          <div className="w-3/6 space-y-4">
-            <img className="max-w-xs" src={TypesList[type]?.image} alt="" />
-            <p className="text-[#2E6295] text-lg font-semibold">
+        <div className="flex flex-col lg:flex-row gap-4 justify-between">
+          <div className="lg:w-3/6 space-y-4">
+            <img className="max-w-[260px] sm:max-w-xs" src={TypesList[type]?.image} alt="" />
+            <p className="text-[#2E6295] hidden sm:inline-flex text-lg font-semibold">
               {TypesList[type]?.desc}
             </p>
           </div>
-          <div className="w-3/6">
-            <div className="max-w-sm ml-16 relative">
+          <div className="lg:w-3/6">
+            <div className="max-w-sm px-4 sm:px-0 lg:ml-16 relative">
               <img
                 className="w-full"
                 src={`/assets/tattvamasi/${
@@ -74,6 +74,9 @@ const TatTvamAsi = () => {
                 </div>
               </div>
             </div>
+            <p className="text-[#2E6295] mt-4 sm:hidden text-lg font-semibold">
+              {TypesList[type]?.desc}
+            </p>
           </div>
         </div>
       </div>

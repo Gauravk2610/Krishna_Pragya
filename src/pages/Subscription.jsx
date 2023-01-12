@@ -161,18 +161,18 @@ const Subscription = () => {
 
   return (
     <div className='min-h-screen bg-white py-4'>
-        <div className='max-w-6xl w-full mx-4 xl:mx-auto'>
+        <div className='max-w-6xl w-full px-4 xl:mx-auto'>
           {/* Indian Subscription model */}
           <div className='mt-6 space-y-4'>
-            <h1 className='text-3xl text-center font-bold'>{isEng ? `SUBSCRIPTION FOR INDIAN KRISHN'S LOVERS` : `भारत में रहने वाले कृष्ण प्रेमियों के लिए सब्सक्राइब`}</h1>
+            <h1 className='text-xl sm:text-3xl text-center font-bold'>{isEng ? `SUBSCRIPTION FOR INDIAN KRISHN'S LOVERS` : `भारत में रहने वाले कृष्ण प्रेमियों के लिए सब्सक्राइब`}</h1>
             <div className='border-2 border-black border-b-0'>
               {
                 SubscriptionModel.map((item) => (
-                  <div className='flex justify-between items-center py-2 px-6 border-b-2 border-black'>
+                  <div className='flex gap-x-2 justify-between items-center py-2 px-6 border-b-2 border-black'>
                     <div className='max-w-lg w-full'>
                       {item.name}
                     </div>
-                    <div className='flex items-center w-full'>
+                    <div className='flex flex-col sm:flex-row items-center w-full'>
                       {
                         item.priceModel.map((price) => (
                           <div className='flex max-w-lg w-full items-center space-x-2'>
@@ -191,7 +191,7 @@ const Subscription = () => {
           </div>
           {/* International Subscription model */}
           <div className='mt-6 space-y-4'>
-            <h1 className='text-3xl text-center font-bold'>
+            <h1 className='text-xl sm:text-3xl text-center font-bold'>
               {
                 isEng ? `SUBSCRIPTION FOR INTERNATIONAL KRISHN'S LOVERS` : `भारत के अलावा अन्य देशों में रहने वाले कृष्ण प्रेमियों के लिए सब्सक्राइब`
               }
@@ -199,11 +199,11 @@ const Subscription = () => {
             <div className='border-2 border-black border-collapse border-b-0'>
               {
                 InternationalSubscriptionModel.map((item) => (
-                  <div className='flex justify-between items-center py-2 px-6 border-b-2 border-black'>
+                  <div className='flex gap-x-2 justify-between items-center py-2 px-6 border-b-2 border-black'>
                     <div className='max-w-lg w-full'>
                       {item.name}
                     </div>
-                    <div className='flex items-center w-full'>
+                    <div className='flex flex-col sm:flex-row  items-center w-full'>
                       {
                         item.priceModel.map((price) => (
                           <div className='flex max-w-lg w-full items-center space-x-2'>

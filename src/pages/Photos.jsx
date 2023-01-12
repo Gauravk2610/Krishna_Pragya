@@ -42,8 +42,8 @@ const Photos = () => {
 
   return (
     <div className="min-h-screen bg-white py-12">
-      <div className="max-w-7xl w-full mx-4 xl:mx-auto space-y-6">
-        <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
+      <div className="max-w-7xl w-full px-4 xl:mx-auto space-y-6">
+        <h1 className="uppercase text-[#2E6295] text-3xl sm:text-4xl font-bold">
           {isEng ? "Photos" : "तस्वीरें"}
         </h1>
         {/* Photos List */}

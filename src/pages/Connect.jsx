@@ -9,13 +9,13 @@ const Connect = () => {
 
   return (
     <div className="bg-white py-12">
-      <div className="max-w-7xl w-full mx-4 xl:mx-auto space-y-8">
+      <div className="max-w-7xl w-full px-4 xl:mx-auto space-y-8">
         {/* Connect */}
         <div className="space-y-6">
-          <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
+          <h1 className="uppercase text-[#2E6295] text-2xl lg:text-4xl font-bold">
             {isEng ? "Connect" : "कनेक्ट करें"}
           </h1>
-          <div className="flex gap-8">
+          <div className="flex flex-col lg:flex-row gap-8">
             <div>
               <img
                 className="max-w-[240px] w-full h-full object-cover"
@@ -27,7 +27,7 @@ const Connect = () => {
               </div>
             </div>
             <div>
-              <h1 className="uppercase text-2xl font-semibold">
+              <h1 className="uppercase text-xl lg:text-2xl font-semibold">
                 {isEng
                   ? "WELCOME TO INTERACT WITH KRISHN PRAGYA TEAM"
                   : "कृष्ण प्रज्ञा टीम के साथ बातचीत में आपका स्वागत है।"}
@@ -37,12 +37,12 @@ const Connect = () => {
         </div>
         {/* Spiritual */}
         <div className="space-y-6">
-          <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
+          <h1 className="uppercase text-[#2E6295] text-2xl lg:text-4xl font-bold">
             {isEng
               ? "SPIRITUAL/ASTRO COUNSELLING"
               : "आध्यात्मिक / खगोलीय परामर्श"}
           </h1>
-          <div className="flex gap-8">
+          <div className="flex flex-col lg:flex-row gap-8">
             <div>
               <img
                 className="max-w-xs w-full h-fit object-cover"
@@ -72,7 +72,7 @@ const Connect = () => {
               </div>
               <form className="max-w-xl w-full space-y-4">
                 <div className="flex flex-col gap-4">
-                  <div className="flex space-x-2">
+                  <div className="flex flex-col md:flex-row gap-2">
                     <input
                       className="border-2 border-gray-500 w-full rounded-lg px-3 py-2 placeholder:text-black"
                       placeholder={isEng ? "First Name" : "पहला नाम"}
@@ -109,7 +109,7 @@ const Connect = () => {
             </div>
           </div>
           <div className="space-y-6">
-            <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
+            <h1 className="uppercase text-[#2E6295] text-2xl lg:text-4xl font-bold">
               {isEng ? "COMMENTS" : "टिप्पणियाँ"}
             </h1>
             <textarea
@@ -119,7 +119,7 @@ const Connect = () => {
               id=""
               rows="10"
             ></textarea>
-            <div className="flex justify-center  max-w-4xl w-full ">
+            <div className="flex justify-center px-6 max-w-4xl w-full ">
               <button className="linear-bg px-6 py-2 text-xl text-white rounded-lg">
                 {isEng ? "Submit" : "सबमिट"}
               </button>

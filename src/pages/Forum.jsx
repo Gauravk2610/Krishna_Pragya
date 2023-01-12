@@ -9,8 +9,8 @@ const Forum = () => {
 
   return (
     <div className="bg-white py-12">
-      <div className="max-w-7xl w-full mx-4 xl:mx-auto">
-        <h1 className="uppercase text-[#2E6295] text-4xl font-bold">{isEng ? "FORUM" : "फोरम"}</h1>
+      <div className="max-w-7xl w-full px-4 xl:mx-auto">
+        <h1 className="uppercase text-[#2E6295] text-3xl sm:text-4xl font-bold">{isEng ? "FORUM" : "फोरम"}</h1>
         <div className="flex flex-col xl:flex-row gap-8 py-6 px-4">
           <img
             className="max-w-lg w-full mx-auto h-full object-cover"
@@ -19,13 +19,13 @@ const Forum = () => {
           />
           <div className="space-y-6">
             <div className="space-y-2 pr-6">
-                <h2 className="text-2xl font-semibold">
+                <h2 className="text-xl sm:text-2xl font-semibold">
                 {isEng ? "A Marquee under which we meet each other to satisfy our spiritual quest." : "एक मार्की जिसके तहत हम एक दूसरे को संतुष्ट करने के लिए मिलते हैं हमारी आध्यात्मिक खोज।"}
                 </h2>
-                <div className="text-2xl font-semibold text-[#06779F]">
+                <div className="text-xl sm:text-2xl font-semibold text-[#06779F]">
                 {isEng ? "THIS WEEK'S TOPIC -" : "इस सप्ताह का विषय -"}
                 </div>
-                <div className="text-2xl font-semibold">{isEng ? "What is Meditation?" : "ध्यान क्या है?"}</div>
+                <div className="text-xl sm:text-2xl font-semibold">{isEng ? "What is Meditation?" : "ध्यान क्या है?"}</div>
                 <div className="font-semibold text-lg">
                 To join the video meeting, click this link:{" "}
                 <a
@@ -46,7 +46,7 @@ const Forum = () => {
             <form className="max-w-lg w-full space-y-4">
                 <h2 className="font-semibold ">{isEng ? "Enroll yourself for discussion" : "चर्चा के लिए खुद को नामांकित करें"}</h2>
                 <div className="flex flex-col gap-4">
-                    <div className="flex space-x-2">
+                    <div className="flex flex-col sm:flex-row gap-2">
                         <input 
                         className="border-2 border-black w-full rounded-md px-3 py-2 placeholder:text-black"
                         placeholder={isEng ? "First Name" : "पहला नाम"}
@@ -56,7 +56,7 @@ const Forum = () => {
                         placeholder={isEng ? "Last Name" : "सरनेम"}
                         type="text" />
                     </div>
-                    <div className="flex space-x-2">
+                    <div className="flex flex-col sm:flex-row gap-2">
                         <input 
                         className="border-2 border-black w-full rounded-md px-3 py-2 placeholder:text-black"
                         placeholder={isEng ? "E-mail" : "ई-मेल"}

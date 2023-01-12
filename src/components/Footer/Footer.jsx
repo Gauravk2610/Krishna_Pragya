@@ -21,7 +21,7 @@ const Footer = () => {
         },
         {
           name: isLang ? "Krishna Pragya" : "कृष्ण प्रज्ञा",
-          link: "krishna-pragya",
+          link: "krishn-pragya",
         },
         {
           name: isLang ? "Tat Tvam Asi" : "तत त्वम असि",
@@ -104,11 +104,11 @@ const Footer = () => {
     {
       group: [
         {
-          name: isLang ? "Privacy Policy" : "गोपनीयता नीति",
+          name: isLang ? "<span class=''>Privacy Policy</span>" : "गोपनीयता नीति",
           link: "/privacy-policy",
         },
         {
-          name: isLang ? "Terms & Conditions" : "नियम एवं शर्तें",
+          name: isLang ? "<span class=''>Terms & Conditions</span>" : "नियम एवं शर्तें",
           link: "/terms-and-conditions",
         },
       ],
@@ -118,12 +118,12 @@ const Footer = () => {
   const SocialMediaIcon = [
     {
       name: "Instagram",
-      link: "https://www.instagram.com/pragyanam/",
+      link: "https://instagram.com/krishnpragya?igshid=YmMyMTA2M2Y=",
       icon: "Instagram.png",
     },
     {
       name: "Youtube",
-      link: "https://www.youtube.com/channel/UCZQY4Z2ZQZ2ZQZ2ZQZ2ZQZ2",
+      link: "https://www.youtube.com/@krishnpragya",
       icon: "Youtube.svg",
     },
     {
@@ -133,43 +133,29 @@ const Footer = () => {
     },
     {
       name: "Twitter",
-      link: "https://twitter.com/pragyanam",
+      link: "https://twitter.com/KrishnPragya?t=UKSeAg36GMSL4tH3xeIJig&s=09",
       icon: "Twitter.svg",
     },
     {
       name: "Facebook",
-      link: "https://www.facebook.com/pragyanam",
+      link: "https://www.facebook.com/profile.php?id=100085928155035",
       icon: "Facebook.svg",
     },
   ];
   return (
-    <div className="linear-bg flex flex-col py-14 px-16 text-white">
-      <div className="flex flex-wrap max-w-[85vw] ml-auto w-full justify-evenly gap-x-6 gap-y-3">
-        {/* Subscribe For More */}
-        {/* <div className="space-y-2 max-w-xs w-full">
-          <div>SUBSCRIBE FOR MORE</div>
-          <div className="flex rounded-md ">
-            <input
-              className="px-4 py-2 w-full rounded-l-md outline-none"
-              placeholder="YOUR E-MAIL"
-              type="email"
-            />
-            <button className="bg-[#2E6295] px-2 py-2 min-w-fit rounded-r-md">
-              SIGN UP
-            </button>
-          </div>
-        </div> */}
+    <div className="linear-bg flex flex-col py-14 px-4 md:px-16 text-white">
+      <div className="flex flex-wrap sm:flex-row max-w-[85vw] lg:max-w-[80vw] sm:ml-auto w-full justify-between gap-x-6 gap-y-[26px] sm:gap-y-3">
         {/* Other Links */}
         {FooterListGroup.map((item, index) => (
-          <ul key={index} className="space-y-4">
+          <ul key={index} className="space-y-2 last:mr-auto last:w-max last:ml-4 sm:last:mr-0 sm:last:ml-0">
             {item.group.map((item, index) => (
               <li key={index} className="capitalize">
                 <Link
                   to={`${item?.link}`}
-                  className="text-xl flex items-center space-x-2 hover:underline"
+                  className="text-[10px] sm:text-xl flex space-x-2 hover:underline"
                 >
-                  <Minus className="w-4" />
-                  <span>{item.name}</span>
+                  <Minus className="w-2 sm:w-4" />
+                  <span dangerouslySetInnerHTML={{__html: item.name}}></span>
                 </Link>
               </li>
             ))}
@@ -177,21 +163,22 @@ const Footer = () => {
         ))}
       </div>
       {/* Bottom Navbar */}
-      <div className="flex items-end justify-between">
+      <div className="flex md:flex-row items-end md:items-end justify-between">
         <img
-          className="w-60 object-contain"
+          className="w-32 md:w-60 object-contain"
           draggable={false}
           src="/assets/Pragyanam.png"
           alt="Pragyanam"
         />
-        <div className="flex items-center space-x-6">
-          <div>{isLang ? "Follow on Social" : "सोशल पर फॉलो करें"}</div>
+        <div className="flex flex-col items-center gap-x-6">
+          <div className="text-[10px] sm:text-base">{isLang ? "Follow on Social" : "सोशल पर फॉलो करें"}</div>
           {/* Ṣocial Media Icons */}
           <div className="flex space-x-3">
             {SocialMediaIcon.map((item, index) => (
               <a key={index} href={item.link} target="_blank" rel="noreferrer">
                 <img
                   draggable={false}
+                  className="w-6 h-6 md:w-auto md:h-auto"
                   src={`/assets/icons/${item.icon}`}
                   alt={item.name}
                 />
@@ -200,7 +187,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t-2 border-black ml-16 mt-4 pt-2 text-[19px]">
+      <div className="border-t-2 border-black md:ml-16 mt-4 pt-2 text-[10px] sm:text-[19px]">
         {isLang
           ? `A-604, Sheraton Classic, Charat Singh Colony, Chakala, Andheri (East),
         Mumbai - 400 093. Maharashtra. India Tel: 98202 27918. E-mail:

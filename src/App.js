@@ -32,11 +32,11 @@ function App() {
   const user = useSelector(state => state.user.value);
 
   useEffect(() => {
-    if (!user) {
-      setTimeout(() => {
-        setShowModal(true);
-      }, 10000);
-    }
+    // if (!user) {
+    //   setTimeout(() => {
+    //     setShowModal(true);
+    //   }, 10000);
+    // }
 
   }, [])
 

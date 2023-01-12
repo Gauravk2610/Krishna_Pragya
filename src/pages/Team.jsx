@@ -74,7 +74,7 @@ const Team = () => {
           />
         </div>
         {/* TWO TEAM TOGETHER */}
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col gap-6">
             <h1 className="text-[#1E974D] text-3xl font-bold text-center uppercase">
               {isEng ? "HINDI EDITORIAL TEAM" : "संपादक मंडल हिंदी"}

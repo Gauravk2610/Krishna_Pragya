@@ -6,7 +6,7 @@
 
 @layer components {
   .menu-item {
-    @apply text-white cursor-pointer px-2 uppercase font-bold text-xl hover:text-[#ffbe00];
+    @apply text-white cursor-pointer px-2 uppercase font-bold text-base sm:text-xl hover:text-[#ffbe00];
   }
 }
 
@@ -44,7 +44,15 @@ code {
 .section3 {
   background: url(./assets/Krishna_pragya.png) no-repeat;
   background-size: cover;
-  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .section2 {
+    background: url(./assets/MobilePilgrim.png) no-repeat;
+    background-position: top;
+    background-size: cover;
+
+  }
 }
 
 .krishn-pragya-btn {
@@ -70,6 +78,17 @@ code {
   background: url(./assets/Vision_Mission.png) no-repeat;
   background-size: cover;
   background-position: 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .visison_mission {
+    background: url(./assets/Vision&Missionbelow.png) no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+  }
+  .section4 {
+    background: black;
+  }
 }
 
 /* input[type=range]::-webkit-slider-thumb {

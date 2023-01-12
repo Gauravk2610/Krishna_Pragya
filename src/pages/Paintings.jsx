@@ -56,8 +56,8 @@ const Paintings = () => {
 
   return (
     <div className="min-h-screen bg-white py-12">
-      <div className="max-w-7xl w-full mx-4 xl:mx-auto space-y-8">
-        <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
+      <div className="max-w-7xl w-full px-4 xl:mx-auto space-y-8">
+        <h1 className="uppercase text-[#2E6295] text-3xl sm:text-4xl font-bold">
           {isEng ? "Paintings" : "पेंटिंग्स"}
         </h1>
         {
@@ -76,19 +76,19 @@ const PaintingsContainer = ({painter, desc, image}) => {
 
     const scrollLeft = () => {
         if (scrollRef.current.scrollLeft <= 0) return;
-        scrollRef.current.scrollLeft -= 200;
+        scrollRef.current.scrollLeft -= 250;
     }
 
     const scrollRight = () => {
         if (scrollRef.current.scrollLeft >= scrollRef.current.scrollWidth) return;
-        scrollRef.current.scrollLeft += 200;
+        scrollRef.current.scrollLeft += 250;
     }
 
   return (
-    <div className="space-y-4 pt-4">
+    <div className="space-y-4 pt-4 px-2">
         {/* Title */}
-      <h2 className="text-[24px]">
-        <span className="text-[#06779F] text-[26px] font-bold">
+      <h2 className="text-[20px]  sm:text-[24px]">
+        <span className="text-[#06779F] text-[20px] sm:text-[26px] font-bold">
           {painter} 
         </span>{" "}
         <span className="text-[#EF5613]">||</span>{" "}
@@ -97,7 +97,7 @@ const PaintingsContainer = ({painter, desc, image}) => {
         </span>
       </h2>
       {/* Paintings List */}
-      <div className="relative flex ">
+      <div className="relative flex mx-12 ">
         {/* Left Icon */}
         <div className="absolute -left-12 top-1/2">
             <div 
@@ -109,10 +109,10 @@ const PaintingsContainer = ({painter, desc, image}) => {
         {/* Paintings */}
         <div 
         ref={scrollRef}
-        className="flex space-x-4 overflow-x-hidden scroll-smooth w-full">
+        className="flex space-x-4 overflow-x-scroll sm:overflow-x-hidden snap-x snap-mandatory snap-center snap-normal scroll-smooth w-full">
             {
                 image?.map((_, i) => (
-                    <img key={i} className="h-[380px] select-none " src={`/assets/paintings/${_?.img}.png`} alt="" />
+                    <img key={i} className="h-[380px] w-[300px] object-cover select-none " src={`/assets/paintings/${_?.img}.png`} alt="" />
                 ))
             }
         </div>
