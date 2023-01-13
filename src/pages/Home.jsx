@@ -215,7 +215,7 @@ const Home = () => {
             {isEng ? "TAT AVAM ASI" : "तत त्वम असि"}
           </h1>
           <div
-            className="text-center text-white text-base sm:text-lg font-semibold mx-6"
+            className="text-center text-white text-base sm:text-lg font-semibold px-6"
             dangerouslySetInnerHTML={{
               __html: isEng
                 ? `<span class="text-[#FFBE00] text-semibold">'Tat Tvam Asi'</span> is one of the eight Upanishadic mahavakyas ( Great
@@ -247,14 +247,14 @@ const Home = () => {
               fill them with optimism and the secrets of success.`
               : `इसके अतिरिक्त उस परम अनंत दिव्य ऊर्जा के आव्हान से किस प्रकार हर व्यक्ति स्वयं को ऊर्जित कर अधिक से अधिक सामर्थ्य प्राप्त कर सकता है, इस पर अथक परिश्रम से एक विशेष कार्यक्रम तैयार किया गया है। जिसका नाम है ‘पोटेंशिओलोज़ी’ (Potentiology) अर्थात् ‘अनंत क्षमता का ज्ञान’। जन साधारण तक इस कार्यक्रम का प्रसार करने का लक्ष्य ‘तत त्वम असि’ के अंतर्गत बनाया गया है। यह कार्यक्रम प्रत्येक आयु वर्ग के लोगों के लिए जीवनोपयोगी होगा। क्योंकि, यह उन्हें जीवन को सकारात्मकता और सफलता के सूत्र प्रदान करेगा।`}
           </div>
-          <div className="flex flex-wrap items-center justify-evenly px-4 gap-y-4 gap-x-6">
-            <Link to={'/tat-tvam-asi/soul-pickings'} className="flex items-center justify-center krishn-pragya-btn px-4 sm:min-w-[160px] h-11 text-base sm:text-lg rounded-xl text-center text-white font-semibold">
+          <div className="flex flex-wrap items-center justify-evenly sm:px-4 gap-y-4 gap-x-6">
+            <Link to={'/tat-tvam-asi/soul-pickings'} className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] h-7 sm:h-11 text-xs sm:text-lg rounded-lg text-center text-white font-semibold">
               {isEng ? `SOUL PICKINGS` : "अमृत कण"}
             </Link>
-            <Link to={'/tat-tvam-asi/parables-zone'} className="flex items-center justify-center krishn-pragya-btn px-4 sm:min-w-[160px] h-11 text-base sm:text-lg rounded-xl text-center text-white font-semibold">
+            <Link to={'/tat-tvam-asi/parables-zone'} className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] h-7 sm:h-11 text-xs sm:text-lg rounded-lg text-center text-white font-semibold">
               {isEng ? "PARABLES ZONE" : "सुन रे मनवा"}
             </Link>
-            <Link to={'/tat-tvam-asi/bubbles-&-balloons'} className="flex items-center justify-center krishn-pragya-btn px-4 sm:min-w-[160px] text-base sm:text-lg px-6 h-11 rounded-xl text-center text-white font-semibold">
+            <Link to={'/tat-tvam-asi/bubbles-&-balloons'} className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] text-xs sm:text-lg h-7 sm:h-11 rounded-lg text-center text-white font-semibold">
               {isEng ? "BUBBLES & BALLOONS" : "क्षण तरंग"}
             </Link>
           </div>
