@@ -21,28 +21,28 @@ const Home = () => {
   const ContentList = [
     {
       title: isEng
-        ? `Welcome to the Vrindavan of Wisdom -<br /> Krishn Pragya! It is more
-      than a magazine.<br /> In fact, it is a divine experience.`
-        : `ज्ञान के वृंदावन में आपका स्वागत है -<br /> कृष्ण प्रज्ञा ! यह एक पत्रिका से कहीं अधिक है।<br /> वास्तव में, यह एक दिव्य अनुभव है।`,
+        ? `Welcome to the Vrindavan of Wisdom -<br class="hidden sm:inline-block" /> Krishn Pragya! It is more
+      than a magazine.<br class="hidden sm:inline-block" /> In fact, it is a divine experience.`
+        : `ज्ञान के वृंदावन में आपका स्वागत है -<br class="hidden sm:inline-block" /> कृष्ण प्रज्ञा ! यह एक पत्रिका से कहीं अधिक है।<br class="hidden sm:inline-block" /> वास्तव में, यह एक दिव्य अनुभव है।`,
       desc: isEng
-        ? `Explore a world of deeper truths through the writings,<br /> musings, teachings culled from the minds of<br /> the greatest thinkers and philosophers of today and<br /> the past on the subjects of Krishn,<br /> Krishn Consciousness, Great Scriptures, Bhagwad Gita, Vedas and Vedantic philosophy.`
-        : `आइए, कृष्ण, कृष्ण चेतना, महान शास्त्रों, भगवद गीता, वेदों<br /> और वेदांतिक दर्शन के विषयों पर आज और अतीत के महानतम विचारकों<br /> और दार्शनिकों के ज्ञान और अनुभूतियों से ली गई रचनाओं, विचारों, शिक्षाओं के<br /> माध्यम से गहरे सत्य की दुनिया को जाने, आत्मसात् करें।<br /> ज्ञान के इस पावन यज्ञ का आनंद लें।`,
+        ? `Explore a world of deeper truths through the writings,<br class="hidden sm:inline-block" /> musings, teachings culled from the minds of<br class="hidden sm:inline-block" /> the greatest thinkers and philosophers of today and<br class="hidden sm:inline-block" /> the past on the subjects of Krishn,<br class="hidden sm:inline-block" /> Krishn Consciousness, Great Scriptures, Bhagwad Gita, Vedas and Vedantic philosophy.`
+        : `आइए, कृष्ण, कृष्ण चेतना, महान शास्त्रों, भगवद गीता, वेदों<br class="hidden sm:inline-block" /> और वेदांतिक दर्शन के विषयों पर आज और अतीत के महानतम विचारकों<br class="hidden sm:inline-block" /> और दार्शनिकों के ज्ञान और अनुभूतियों से ली गई रचनाओं, विचारों, शिक्षाओं के<br class="hidden sm:inline-block" /> माध्यम से गहरे सत्य की दुनिया को जाने, आत्मसात् करें।<br class="hidden sm:inline-block" /> ज्ञान के इस पावन यज्ञ का आनंद लें।`,
       img: isEng ? Frame1 : HindiFrame1,
       author: "Gopal Swami Khetanchi",
     },
     {
       title: "",
       desc: isEng
-        ? `Imbibe the Krishn-Tatva by harnessing the power of<br /> your soul, make your life an inner renunciation,<br /> outer celebration and learn to live<br /> in eternal bliss with Krishn Pragya.`
-        : `अपनी आत्मा की शक्ति का उपयोग करके कृष्ण-तत्व को भीतर उतारें,<br /> अपने जीवन को आंतरिक त्याग और बाहरी उत्सव बनाएं।<br /> ‘कृष्ण प्रज्ञा’ के शब्दों के साथ परमानंद में रहना सीखें।<br /> हर शब्द यहाँ अध्यात्म के प्रकाश में उजला है।`,
+        ? `Imbibe the Krishn-Tatva by harnessing the power of<br class="hidden sm:inline-block" /> your soul, make your life an inner renunciation,<br class="hidden sm:inline-block" /> outer celebration and learn to live<br class="hidden sm:inline-block" /> in eternal bliss with Krishn Pragya.`
+        : `अपनी आत्मा की शक्ति का उपयोग करके कृष्ण-तत्व को भीतर उतारें,<br class="hidden sm:inline-block" /> अपने जीवन को आंतरिक त्याग और बाहरी उत्सव बनाएं।<br class="hidden sm:inline-block" /> ‘कृष्ण प्रज्ञा’ के शब्दों के साथ परमानंद में रहना सीखें।<br class="hidden sm:inline-block" /> हर शब्द यहाँ अध्यात्म के प्रकाश में उजला है।`,
       img: isEng ? Frame2 : HindiFrame2,
       author: "Gopal Swami Khetanchi",
     },
     {
       title: "",
       desc: isEng
-        ? `Embark on a spiritual journey to the inner recesses of<br /> your heart, to behold your soul, and partake of<br /> the nectar of divine knowledge<br /> with and of Krishn in Krishn Pragya.`
-        : `अपनी आत्मा को निहारने के लिए, और ‘कृष्ण प्रज्ञा’ में<br /> कृष्ण के साथ और दिव्य ज्ञान के अमृत का<br /> सहभागी बनने के लिए, अपने हृदय के भीतरी कोनों की<br /> आध्यात्मिक यात्रा पर आगे बढ़ें।`,
+        ? `Embark on a spiritual journey to the inner recesses of<br class="hidden sm:inline-block" /> your heart, to behold your soul, and partake of<br class="hidden sm:inline-block" /> the nectar of divine knowledge<br class="hidden sm:inline-block" /> with and of Krishn in Krishn Pragya.`
+        : `अपनी आत्मा को निहारने के लिए, और ‘कृष्ण प्रज्ञा’ में<br class="hidden sm:inline-block" /> कृष्ण के साथ और दिव्य ज्ञान के अमृत का<br class="hidden sm:inline-block" /> सहभागी बनने के लिए, अपने हृदय के भीतरी कोनों की<br class="hidden sm:inline-block" /> आध्यात्मिक यात्रा पर आगे बढ़ें।`,
       img: isEng ? Frame3 : HindiFrame3,
       author: "Hari Om Singh",
     },
@@ -61,7 +61,7 @@ const Home = () => {
 
   const ImageFrame = ({ image, index }) => (
     <div
-      className={`${counter !== index && "hidden"} relative w-[50vw] h-full`}
+      className={`${counter !== index && "hidden"} relative sm:w-[50vw] h-full`}
     >
       <div className="">
         <img
@@ -134,15 +134,15 @@ const Home = () => {
               className="text-center text-lg font-semibold px-4"
               dangerouslySetInnerHTML={{
                 __html: isEng
-                  ? `Pawan K. Sethhi is associated with media and writing for the last 35 years.<br /> He was drawn to spirituality since his youth. His inquisitive spirit would<br /> traverse to the inner reflections and spiritual inquiries of life and<br /> in the pursuits of Vedanta and Indian philosophy.`
-                  : `पवन के सेठी, 35 वर्ष से मीडिया और गहन लेखन से जुड़े हुए हैं।<br /> वे युवा अवस्था से अध्यात्म के प्रति समर्पित हो गए।<br /> उनका खोजी मन डूब जाता मनन<br /> और चिंतन में, धर्म, भारतीय दर्शन और वेदांत के अध्ययन में।`,
+                  ? `Pawan K. Sethhi is associated with media and writing for the last 35 years.<br class="hidden sm:inline-block" /> He was drawn to spirituality since his youth. His inquisitive spirit would<br class="hidden sm:inline-block" /> traverse to the inner reflections and spiritual inquiries of life and<br class="hidden sm:inline-block" /> in the pursuits of Vedanta and Indian philosophy.`
+                  : `पवन के सेठी, 35 वर्ष से मीडिया और गहन लेखन से जुड़े हुए हैं।<br class="hidden sm:inline-block" /> वे युवा अवस्था से अध्यात्म के प्रति समर्पित हो गए।<br class="hidden sm:inline-block" /> उनका खोजी मन डूब जाता मनन<br class="hidden sm:inline-block" /> और चिंतन में, धर्म, भारतीय दर्शन और वेदांत के अध्ययन में।`,
               }}
             />
             <p className="text-center text-lg font-semibold px-4" dangerouslySetInnerHTML={{__html: isEng
                 ? `
-                His prime areas of study are Advaita darshan, Vedanta,<br /> and Shrimad Bhagavad-Gita and the expansion of Krishn consciousness.<br /> It is a rare coincidence and more than that, a blessing of lord Krishn,<br /> that he has started Krishn Pragya for the seekers and<br /> connoisseurs of Indian religion and philosophy and the lovers of<br /> lord Krishn. This move is like a divine Yagya. Moreover,<br /> Mr. Sethhi is involved in nation-building and social betterment<br /> through a dynamic spiritual organization named "Tat Tvam Asi"<br /> which is determined to provide young and talented students<br /> with a learning experience without cumbersome books.
+                His prime areas of study are Advaita darshan, Vedanta,<br class="hidden sm:inline-block" /> and Shrimad Bhagavad-Gita and the expansion of Krishn consciousness.<br class="hidden sm:inline-block" /> It is a rare coincidence and more than that, a blessing of lord Krishn,<br class="hidden sm:inline-block" /> that he has started Krishn Pragya for the seekers and<br class="hidden sm:inline-block" /> connoisseurs of Indian religion and philosophy and the lovers of<br class="hidden sm:inline-block" /> lord Krishn. This move is like a divine Yagya. Moreover,<br class="hidden sm:inline-block" /> Mr. Sethhi is involved in nation-building and social betterment<br class="hidden sm:inline-block" /> through a dynamic spiritual organization named "Tat Tvam Asi"<br class="hidden sm:inline-block" /> which is determined to provide young and talented students<br class="hidden sm:inline-block" /> with a learning experience without cumbersome books.
                 `
-                : "उन्होंने यदि एक ओर कई विचारकों, चिंतकों और दार्शनिकों के मानस सानिध्य में<br /> अंतरचेतना पाई तो दूसरी ओर अपने आध्यात्मिक अनुभवों से अनेक हृदयों को प्रेरणा दी।<br /> वे अद्वैत दर्शन, वेदांत और श्रीमद्भगवदगीता और कृष्ण तत्व के प्रसार में निरंतर प्रयत्नरत हैं।<br /> यह अद्भुत संयोग और कृष्ण प्रेरणा ही है कि उन्होंने ‘कृष्ण प्रज्ञा’ के रूप में<br /> नयी पीढ़ी, कृष्ण प्रेमियों और भारतीय धर्म और दर्शन में रुचि रखने वाले<br /> जिज्ञासुओं तक कृष्ण जीवन और कृष्ण तत्व को पहुँचाने का यह यज्ञ आरम्भ किया है।<br /> इसी का साथ ही “तत त्वम असि” नाम की समाज सेवी संस्था के निर्माण में संलग्न हैं।<br /> जिसके द्वारा प्रतिभाशाली बालकों को पाठ्यपुस्तक रहित नयी प्रणाली से<br /> शिक्षा देने का उद्देश्य है।"
+                : "उन्होंने यदि एक ओर कई विचारकों, चिंतकों और दार्शनिकों के मानस सानिध्य में<br class='hidden sm:inline-block' /> अंतरचेतना पाई तो दूसरी ओर अपने आध्यात्मिक अनुभवों से अनेक हृदयों को प्रेरणा दी।<br class='hidden sm:inline-block' /> वे अद्वैत दर्शन, वेदांत और श्रीमद्भगवदगीता और कृष्ण तत्व के प्रसार में निरंतर प्रयत्नरत हैं।<br class='hidden sm:inline-block' /> यह अद्भुत संयोग और कृष्ण प्रेरणा ही है कि उन्होंने ‘कृष्ण प्रज्ञा’ के रूप में<br class='hidden sm:inline-block' /> नयी पीढ़ी, कृष्ण प्रेमियों और भारतीय धर्म और दर्शन में रुचि रखने वाले<br class='hidden sm:inline-block' /> जिज्ञासुओं तक कृष्ण जीवन और कृष्ण तत्व को पहुँचाने का यह यज्ञ आरम्भ किया है।<br class='hidden sm:inline-block' /> इसी का साथ ही “तत त्वम असि” नाम की समाज सेवी संस्था के निर्माण में संलग्न हैं।<br class='hidden sm:inline-block' /> जिसके द्वारा प्रतिभाशाली बालकों को पाठ्यपुस्तक रहित नयी प्रणाली से<br class='hidden sm:inline-block' /> शिक्षा देने का उद्देश्य है।"
             }}
           />
           </div>
@@ -165,7 +165,7 @@ const Home = () => {
             <div className="space-y-4">
               <div className="text-center text-lg font-semibold px-12 md:px-32" dangerouslySetInnerHTML={{__html: isEng
                   ? "Divine confluence of Modernity steeped in ancient wisdom."
-                  : "कृष्ण प्रज्ञा- प्राचीन ज्ञान में<br /> डूबी आधुनिकता का दिव्य संगम।"
+                  : "कृष्ण प्रज्ञा- प्राचीन ज्ञान में<br class='hidden sm:inline-block' /> डूबी आधुनिकता का दिव्य संगम।"
                 }}>
               </div>
               <div
@@ -173,8 +173,8 @@ const Home = () => {
                 dangerouslySetInnerHTML={{
                   __html: isEng
                     ? `Feel the joy of being with Yogeshwar Krishn in the pages of Krishn
-                  Pragya. Dance of wisdom and melody <br />of life for you.`
-                    : `कृष्ण प्रज्ञा के पृष्ठों में योगेश्वर कृष्ण के साथ होने के<br /> आनंद की अनुभूति करें। आपके लिए ज्ञान का नृत्य<br /> और जीवन का माधुर्य समेटे हैं ये पृष्ठ।`,
+                  Pragya. Dance of wisdom and melody <br class="hidden sm:inline-block" />of life for you.`
+                    : `कृष्ण प्रज्ञा के पृष्ठों में योगेश्वर कृष्ण के साथ होने के<br class="hidden sm:inline-block" /> आनंद की अनुभूति करें। आपके लिए ज्ञान का नृत्य<br class="hidden sm:inline-block" /> और जीवन का माधुर्य समेटे हैं ये पृष्ठ।`,
                 }}
               ></div>
             </div>
@@ -210,7 +210,7 @@ const Home = () => {
         <div className="max-w-2xl w-full flex flex-col sm:mx-20 justify-center items-center text-[#2E6295] space-y-8">
           <img
             className="w-full sm:hidden"
-            src="/assets/TAT AVAM ASI.png"
+            src={`/assets/${isEng ? 'TAT AVAM ASI.png' : 'TAT AVAM ASI Hindi.png'}`}
             alt=""
           />
           <h1 className="text-3xl sm:text-4xl font-bold text-center">
