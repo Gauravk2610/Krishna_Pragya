@@ -4,6 +4,12 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { isEnglish } from "../utils";
+import Frame1 from "../assets/Frame 1.svg";
+import Frame2 from "../assets/Frame 2.svg";
+import Frame3 from "../assets/Frame 3.svg";
+import HindiFrame1 from "../assets/Hindi 1.svg";
+import HindiFrame2 from "../assets/Hindi 2.svg";
+import HindiFrame3 from "../assets/Hindi 3.svg";
 
 const Home = () => {
   const [counter, setCounter] = React.useState(0);
@@ -15,33 +21,29 @@ const Home = () => {
   const ContentList = [
     {
       title: isEng
-        ? `Welcome to the Vrindavan of Wisdom - Krishn Pragya! It is more
-      than a magazine. In fact, it is a divine experience.`
-        : `ज्ञान के वृंदावन में आपका स्वागत है - कृष्ण प्रज्ञा ! यह एक पत्रिका से कहीं अधिक है। वास्तव में, यह एक दिव्य अनुभव है।`,
+        ? `Welcome to the Vrindavan of Wisdom -<br /> Krishn Pragya! It is more
+      than a magazine.<br /> In fact, it is a divine experience.`
+        : `ज्ञान के वृंदावन में आपका स्वागत है -<br /> कृष्ण प्रज्ञा ! यह एक पत्रिका से कहीं अधिक है।<br /> वास्तव में, यह एक दिव्य अनुभव है।`,
       desc: isEng
-        ? `Explore a world of deeper truths through the writings, musings,
-      teachings culled from the minds of the greatest thinkers and
-      philosophers of today and the past on the subjects of Krishn,
-      Krishn Consciousness, Great Scriptures, Bhagwad Gita, Vedas and
-      Vedantic philosophy.`
-        : `आइए, कृष्ण, कृष्ण चेतना, महान शास्त्रों, भगवद गीता, वेदों और वेदांतिक दर्शन के विषयों पर आज और अतीत के महानतम विचारकों और दार्शनिकों के ज्ञान और अनुभूतियों से ली गई रचनाओं, विचारों, शिक्षाओं के माध्यम से गहरे सत्य की दुनिया को जाने, आत्मसात् करें। ज्ञान के इस पावन यज्ञ का आनंद लें।`,
-      img: "Krishna1.png",
+        ? `Explore a world of deeper truths through the writings,<br /> musings, teachings culled from the minds of<br /> the greatest thinkers and philosophers of today and<br /> the past on the subjects of Krishn,<br /> Krishn Consciousness, Great Scriptures, Bhagwad Gita, Vedas and Vedantic philosophy.`
+        : `आइए, कृष्ण, कृष्ण चेतना, महान शास्त्रों, भगवद गीता, वेदों<br /> और वेदांतिक दर्शन के विषयों पर आज और अतीत के महानतम विचारकों<br /> और दार्शनिकों के ज्ञान और अनुभूतियों से ली गई रचनाओं, विचारों, शिक्षाओं के<br /> माध्यम से गहरे सत्य की दुनिया को जाने, आत्मसात् करें।<br /> ज्ञान के इस पावन यज्ञ का आनंद लें।`,
+      img: isEng ? Frame1 : HindiFrame1,
       author: "Gopal Swami Khetanchi",
     },
     {
       title: "",
       desc: isEng
-        ? `Imbibe the Krishn-Tatva by harnessing the power of your soul, make your life an inner renunciation, outer celebration and learn to live in eternal bliss with Krishn Pragya.`
-        : `अपनी आत्मा की शक्ति का उपयोग करके कृष्ण-तत्व को भीतर उतारें, अपने जीवन को आंतरिक त्याग और बाहरी उत्सव बनाएं। ‘कृष्ण प्रज्ञा’ के शब्दों के साथ परमानंद में रहना सीखें। हर शब्द यहाँ अध्यात्म के प्रकाश में उजला है।`,
-      img: "Krishna2.png",
+        ? `Imbibe the Krishn-Tatva by harnessing the power of<br /> your soul, make your life an inner renunciation,<br /> outer celebration and learn to live<br /> in eternal bliss with Krishn Pragya.`
+        : `अपनी आत्मा की शक्ति का उपयोग करके कृष्ण-तत्व को भीतर उतारें,<br /> अपने जीवन को आंतरिक त्याग और बाहरी उत्सव बनाएं।<br /> ‘कृष्ण प्रज्ञा’ के शब्दों के साथ परमानंद में रहना सीखें।<br /> हर शब्द यहाँ अध्यात्म के प्रकाश में उजला है।`,
+      img: isEng ? Frame2 : HindiFrame2,
       author: "Gopal Swami Khetanchi",
     },
     {
       title: "",
       desc: isEng
-        ? `Embark on a spiritual journey to the inner recesses of your heart, to behold your soul, and partake of the nectar of divine knowledge with and of Krishn in Krishn Pragya.`
-        : `अपनी आत्मा को निहारने के लिए, और ‘कृष्ण प्रज्ञा’ में कृष्ण के साथ और दिव्य ज्ञान के अमृत का सहभागी बनने के लिए, अपने हृदय के भीतरी कोनों की आध्यात्मिक यात्रा पर आगे बढ़ें।`,
-      img: "Krishna3.png",
+        ? `Embark on a spiritual journey to the inner recesses of<br /> your heart, to behold your soul, and partake of<br /> the nectar of divine knowledge<br /> with and of Krishn in Krishn Pragya.`
+        : `अपनी आत्मा को निहारने के लिए, और ‘कृष्ण प्रज्ञा’ में<br /> कृष्ण के साथ और दिव्य ज्ञान के अमृत का<br /> सहभागी बनने के लिए, अपने हृदय के भीतरी कोनों की<br /> आध्यात्मिक यात्रा पर आगे बढ़ें।`,
+      img: isEng ? Frame3 : HindiFrame3,
       author: "Hari Om Singh",
     },
   ];
@@ -57,26 +59,18 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [counter]);
 
-  const ImageFrame = ({ image }) => (
-    <div className="relative ">
-      <div className="relative">
+  const ImageFrame = ({ image, index }) => (
+    <div
+      className={`${counter !== index && "hidden"} relative w-[50vw] h-full`}
+    >
+      <div className="">
         <img
-          src="/assets/Frame (2).svg"
+          src={image}
           draggable={false}
           alt="Frame"
-          className="max-w-[50vw] w-full h-full object-contain relative"
-        />
-        <div className="courtesy absolute bottom-32 -right-6 text-[#003E92] text-[12px]">
-          Courtesy - {ContentList[counter].author}
-        </div>
-      </div>
-      <div className="absolute inset-0 flex items-center m-14  justify-center">
-        <img
-          className="w-full"
-          effect="blur"
-          src={`/assets/images/${ContentList[counter].img}`}
-          draggable={false}
-          alt=""
+          className={`${
+            counter !== index && "hidden"
+          } w-full h-full object-contain relative`}
         />
       </div>
     </div>
@@ -87,22 +81,28 @@ const Home = () => {
       <section id="" className="px-4 md:px-16  linear-bg pb-14">
         <div className="py-8 flex flex-col-reverse lg:flex-row justify-between gap-x-4">
           {/* Content */}
-          <div className="mx-auto md:max-w-lg flex flex-col items-end justify-center">
+          <div className="mx-auto md:max-w-[620px] flex flex-col items-end justify-center">
             {/* Main Content */}
-            <div className="flex flex-col px-4 items-center justify-center space-y-6 h-full min-h-[350px]">
+            <div className="flex flex-col items-center justify-center space-y-6 h-full min-h-[350px]">
               {ContentList[counter].title && (
-                <div className="text-[#ffbe00] h-full flex items-end text-center text-xl sm:text-2xl">
-                  {ContentList[counter].title}
-                </div>
+                <div
+                  className={`text-[#ffbe00] h-full flex items-end text-center text-xl sm:text-2xl`}
+                  dangerouslySetInnerHTML={{
+                    __html: ContentList[counter].title,
+                  }}
+                />
               )}
               {ContentList[counter].desc && (
-                <div className="text-white h-full flex items-center text-center text-xl sm:text-2xl">
-                  {ContentList[counter].desc}
-                </div>
+                <div
+                  className="text-white h-full flex items-center text-center text-xl sm:text-2xl"
+                  dangerouslySetInnerHTML={{
+                    __html: ContentList[counter].desc,
+                  }}
+                />
               )}
               <div className="">
                 <img
-                  className="w-full h-8 object-contain mb-12"
+                  className="w-full object-contain mb-12"
                   src="/assets/Flute.png"
                   draggable={false}
                   alt=""
@@ -111,7 +111,9 @@ const Home = () => {
             </div>
           </div>
           {/* Image */}
-          <ImageFrame />
+          {ContentList?.map((item, index) => (
+            <ImageFrame image={item.img} index={index} />
+          ))}
         </div>
       </section>
       <section
@@ -120,37 +122,29 @@ const Home = () => {
       >
         <div className=" lg:mt-0">
           <div className="flex max-w-3xl w-full sm:px-20 pb-16 text-[#2E6295] flex-col items-center justify-center space-y-8">
-            <img 
-            className="w-[100vw] sm:hidden"
-            src="/assets/MobilePilgrimCrp.png" alt="" />
+            <img
+              className="w-[100vw] sm:hidden"
+              src="/assets/MobilePilgrimCrp.png"
+              alt=""
+            />
             <h1 className="text-2xl sm:text-[45px] font-bold text-center">
               {isEng ? "A PILGRIM OF SPIRITUALITY" : "अध्यात्म पथ का यात्री"}
             </h1>
-            <p className="text-center text-lg font-semibold px-4">
-              {isEng
-                ? `Pawan K. Sethhi is associated with media and writing for the last
-                35 years. He was drawn to spirituality since his youth. His
-                inquisitive spirit would traverse to the inner reflections and
-                spiritual inquiries of life and in the pursuits of Vedanta and
-                Indian philosophy.`
-                : `पवन के सेठी, 35 वर्ष से मीडिया और गहन लेखन से जुड़े हुए हैं। वे युवा अवस्था से अध्यात्म के प्रति समर्पित हो गए। उनका खोजी मन डूब जाता मनन और चिंतन में, धर्म, भारतीय दर्शन और वेदांत के अध्ययन में।`}
-            </p>
-            <p className="text-center text-lg font-semibold px-4">
-              {isEng
+            <p
+              className="text-center text-lg font-semibold px-4"
+              dangerouslySetInnerHTML={{
+                __html: isEng
+                  ? `Pawan K. Sethhi is associated with media and writing for the last 35 years.<br /> He was drawn to spirituality since his youth. His inquisitive spirit would<br /> traverse to the inner reflections and spiritual inquiries of life and<br /> in the pursuits of Vedanta and Indian philosophy.`
+                  : `पवन के सेठी, 35 वर्ष से मीडिया और गहन लेखन से जुड़े हुए हैं।<br /> वे युवा अवस्था से अध्यात्म के प्रति समर्पित हो गए।<br /> उनका खोजी मन डूब जाता मनन<br /> और चिंतन में, धर्म, भारतीय दर्शन और वेदांत के अध्ययन में।`,
+              }}
+            />
+            <p className="text-center text-lg font-semibold px-4" dangerouslySetInnerHTML={{__html: isEng
                 ? `
-                His prime areas of study are Advaita darshan, Vedanta, and Shrimad
-                Bhagavad-Gita and the expansion of Krishn consciousness. It is a
-                rare coincidence and more than that, a blessing of lord Krishn,
-                that he has started Krishn Pragya for the seekers and connoisseurs
-                of Indian religion and philosophy and the lovers of lord Krishn.
-                This move is like a divine Yagya. Moreover, Mr. Sethhi is involved
-                in nation-building and social betterment through a dynamic
-                spiritual organization named "Tat Tvam Asi" which is determined to
-                provide young and talented students with a learning experience
-                without cumbersome books.
+                His prime areas of study are Advaita darshan, Vedanta,<br /> and Shrimad Bhagavad-Gita and the expansion of Krishn consciousness.<br /> It is a rare coincidence and more than that, a blessing of lord Krishn,<br /> that he has started Krishn Pragya for the seekers and<br /> connoisseurs of Indian religion and philosophy and the lovers of<br /> lord Krishn. This move is like a divine Yagya. Moreover,<br /> Mr. Sethhi is involved in nation-building and social betterment<br /> through a dynamic spiritual organization named "Tat Tvam Asi"<br /> which is determined to provide young and talented students<br /> with a learning experience without cumbersome books.
                 `
-                : "उन्होंने यदि एक ओर कई विचारकों, चिंतकों और दार्शनिकों के मानस सानिध्य में अंतरचेतना पाई तो दूसरी ओर अपने आध्यात्मिक अनुभवों से अनेक हृदयों को प्रेरणा दी। वे अद्वैत दर्शन, वेदांत और श्रीमद्भगवदगीता और कृष्ण तत्व के प्रसार में निरंतर प्रयत्नरत हैं। यह अद्भुत संयोग और कृष्ण प्रेरणा ही है कि उन्होंने ‘कृष्ण प्रज्ञा’ के रूप में नयी पीढ़ी, कृष्ण प्रेमियों और भारतीय धर्म और दर्शन में रुचि रखने वाले जिज्ञासुओं तक कृष्ण जीवन और कृष्ण तत्व को पहुँचाने का यह यज्ञ आरम्भ किया है। इसी का साथ ही “तत त्वम असि” नाम की समाज सेवी संस्था के निर्माण में संलग्न हैं। जिसके द्वारा प्रतिभाशाली बालकों को पाठ्यपुस्तक रहित नयी प्रणाली से शिक्षा देने का उद्देश्य है।"}
-            </p>
+                : "उन्होंने यदि एक ओर कई विचारकों, चिंतकों और दार्शनिकों के मानस सानिध्य में<br /> अंतरचेतना पाई तो दूसरी ओर अपने आध्यात्मिक अनुभवों से अनेक हृदयों को प्रेरणा दी।<br /> वे अद्वैत दर्शन, वेदांत और श्रीमद्भगवदगीता और कृष्ण तत्व के प्रसार में निरंतर प्रयत्नरत हैं।<br /> यह अद्भुत संयोग और कृष्ण प्रेरणा ही है कि उन्होंने ‘कृष्ण प्रज्ञा’ के रूप में<br /> नयी पीढ़ी, कृष्ण प्रेमियों और भारतीय धर्म और दर्शन में रुचि रखने वाले<br /> जिज्ञासुओं तक कृष्ण जीवन और कृष्ण तत्व को पहुँचाने का यह यज्ञ आरम्भ किया है।<br /> इसी का साथ ही “तत त्वम असि” नाम की समाज सेवी संस्था के निर्माण में संलग्न हैं।<br /> जिसके द्वारा प्रतिभाशाली बालकों को पाठ्यपुस्तक रहित नयी प्रणाली से<br /> शिक्षा देने का उद्देश्य है।"
+            }}
+          />
           </div>
         </div>
       </section>
@@ -160,15 +154,19 @@ const Home = () => {
       >
         <div className="sm:w-1/2 flex justify-center">
           <div className="max-w-xl w-full flex flex-col justify-center items-center text-[#2E6295] space-y-8">
-            <img className="w-full sm:hidden" src="/assets/krishn pragya magazine photo.png" alt="" />
+            <img
+              className="w-full sm:hidden"
+              src="/assets/krishn pragya magazine photo.png"
+              alt=""
+            />
             <h1 className="text-4xl font-bold text-center">
               {isEng ? "KRISHN PRAGYA" : "कृष्ण प्रज्ञा"}
             </h1>
             <div className="space-y-4">
-              <div className="text-center text-lg font-semibold px-12 md:px-32">
-                {isEng
+              <div className="text-center text-lg font-semibold px-12 md:px-32" dangerouslySetInnerHTML={{__html: isEng
                   ? "Divine confluence of Modernity steeped in ancient wisdom."
-                  : "कृष्ण प्रज्ञा- प्राचीन ज्ञान में डूबी आधुनिकता का दिव्य संगम।"}
+                  : "कृष्ण प्रज्ञा- प्राचीन ज्ञान में<br /> डूबी आधुनिकता का दिव्य संगम।"
+                }}>
               </div>
               <div
                 className="text-center text-lg font-semibold px-12 md:px-14"
@@ -176,7 +174,7 @@ const Home = () => {
                   __html: isEng
                     ? `Feel the joy of being with Yogeshwar Krishn in the pages of Krishn
                   Pragya. Dance of wisdom and melody <br />of life for you.`
-                    : `कृष्ण प्रज्ञा के पृष्ठों में योगेश्वर कृष्ण के साथ होने के आनंद की अनुभूति करें। आपके लिए ज्ञान का नृत्य और जीवन का माधुर्य समेटे हैं ये पृष्ठ।`,
+                    : `कृष्ण प्रज्ञा के पृष्ठों में योगेश्वर कृष्ण के साथ होने के<br /> आनंद की अनुभूति करें। आपके लिए ज्ञान का नृत्य<br /> और जीवन का माधुर्य समेटे हैं ये पृष्ठ।`,
                 }}
               ></div>
             </div>
@@ -210,7 +208,11 @@ const Home = () => {
           />
         </div>
         <div className="max-w-2xl w-full flex flex-col sm:mx-20 justify-center items-center text-[#2E6295] space-y-8">
-          <img className="w-full sm:hidden" src="/assets/TAT AVAM ASI.png" alt="" />
+          <img
+            className="w-full sm:hidden"
+            src="/assets/TAT AVAM ASI.png"
+            alt=""
+          />
           <h1 className="text-3xl sm:text-4xl font-bold text-center">
             {isEng ? "TAT AVAM ASI" : "तत त्वम असि"}
           </h1>
@@ -248,13 +250,22 @@ const Home = () => {
               : `इसके अतिरिक्त उस परम अनंत दिव्य ऊर्जा के आव्हान से किस प्रकार हर व्यक्ति स्वयं को ऊर्जित कर अधिक से अधिक सामर्थ्य प्राप्त कर सकता है, इस पर अथक परिश्रम से एक विशेष कार्यक्रम तैयार किया गया है। जिसका नाम है ‘पोटेंशिओलोज़ी’ (Potentiology) अर्थात् ‘अनंत क्षमता का ज्ञान’। जन साधारण तक इस कार्यक्रम का प्रसार करने का लक्ष्य ‘तत त्वम असि’ के अंतर्गत बनाया गया है। यह कार्यक्रम प्रत्येक आयु वर्ग के लोगों के लिए जीवनोपयोगी होगा। क्योंकि, यह उन्हें जीवन को सकारात्मकता और सफलता के सूत्र प्रदान करेगा।`}
           </div>
           <div className="flex flex-wrap items-center justify-evenly sm:px-4 gap-y-4 gap-x-6">
-            <Link to={'/tat-tvam-asi/soul-pickings'} className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] h-7 sm:h-11 text-xs sm:text-lg rounded-lg text-center text-white font-semibold">
+            <Link
+              to={"/tat-tvam-asi/soul-pickings"}
+              className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] h-7 sm:h-11 text-xs sm:text-lg rounded-lg text-center text-white font-semibold"
+            >
               {isEng ? `SOUL PICKINGS` : "अमृत कण"}
             </Link>
-            <Link to={'/tat-tvam-asi/parables-zone'} className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] h-7 sm:h-11 text-xs sm:text-lg rounded-lg text-center text-white font-semibold">
+            <Link
+              to={"/tat-tvam-asi/parables-zone"}
+              className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] h-7 sm:h-11 text-xs sm:text-lg rounded-lg text-center text-white font-semibold"
+            >
               {isEng ? "PARABLES ZONE" : "सुन रे मनवा"}
             </Link>
-            <Link to={'/tat-tvam-asi/bubbles-&-balloons'} className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] text-xs sm:text-lg h-7 sm:h-11 rounded-lg text-center text-white font-semibold">
+            <Link
+              to={"/tat-tvam-asi/bubbles-&-balloons"}
+              className="flex items-center justify-center krishn-pragya-btn px-3 sm:px-4 sm:min-w-[160px] text-xs sm:text-lg h-7 sm:h-11 rounded-lg text-center text-white font-semibold"
+            >
               {isEng ? "BUBBLES & BALLOONS" : "क्षण तरंग"}
             </Link>
           </div>
