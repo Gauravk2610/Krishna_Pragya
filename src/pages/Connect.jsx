@@ -18,7 +18,7 @@ const Connect = () => {
           <div className="flex flex-col lg:flex-row gap-8">
             <div>
               <img
-                className="max-w-[240px] w-full h-full object-cover"
+                className="max-w-[380px] w-full h-full object-cover"
                 src="/assets/connect/hand.png"
                 alt=""
               />

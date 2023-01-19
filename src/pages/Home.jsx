@@ -198,19 +198,19 @@ const Home = () => {
       </section>
       <section
         id="tat-tvam-asi"
-        className="section4  min-h-screen pt-24 pb-16 flex items-center justify-between h-full"
+        className={`${ isEng? 'section4' : 'section4-hindi' }  min-h-screen pt-24 pb-16 flex items-center justify-between h-full`}
       >
         <div className="hidden sm:flex w-full max-w-xl items-center justify-center">
-          <img
+          {/* <img
             draggable={false}
             src="/assets/TatVatSami.svg"
             alt="TatVatSami"
-          />
+          /> */}
         </div>
         <div className="max-w-2xl w-full flex flex-col sm:mx-20 justify-center items-center text-[#2E6295] space-y-8">
           <img
             className="w-full sm:hidden"
-            src={`/assets/${isEng ? 'TAT AVAM ASI.png' : 'TAT AVAM ASI Hindi.png'}`}
+            src={`/assets/${isEng ? 'TAT AVAM ASI English Image.png' : 'TAT AVAM ASI Hindi Image.png'}`}
             alt=""
           />
           <h1 className="text-3xl sm:text-4xl font-bold text-center">

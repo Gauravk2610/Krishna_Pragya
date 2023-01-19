@@ -66,6 +66,12 @@ code {
   background-position: center;
 }
 
+.section4-hindi {
+  background: url(./assets/TATAVAMASIHIndi.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .krishn-pragya-linear-gradient {
   background: transparent linear-gradient(90deg, #CEE1ED 0%, #D9EEE5 100%) 0% 0% no-repeat padding-box;
 }
@@ -75,7 +81,7 @@ code {
 }
 
 .visison_mission {
-  background: url(./assets/Vision_Mission.png) no-repeat;
+  background: no-repeat;
   background-size: cover;
   background-position: 0px 0px;
 }
@@ -88,7 +94,10 @@ code {
   }
   .section4 {
     background: black;
+  }.section4-hindi {
+    background: black;
   }
+  
 }
 
 /* input[type=range]::-webkit-slider-thumb {
