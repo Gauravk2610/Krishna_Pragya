@@ -8,7 +8,7 @@ const Subscribe = () => {
   const isLang = isEnglish(language)
 
   return (
-    <Link className='subscribe_button fixed z-20 right-0 bottom-24 linear-bg px-4 py-2 font-semibold rounded-md uppercase text-white text-sm md:text-lg' to={'/subscription'}>
+    <Link className='subscribe_button fixed z-20 right-0 bottom-[20vh] linear-bg px-4 py-2 font-semibold rounded-md uppercase text-white text-sm md:text-lg' to={'/subscription'}>
         {
           isLang ? 'Subscribe' : 'सब्सक्राइब'
         }

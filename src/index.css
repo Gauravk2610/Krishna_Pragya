@@ -130,3 +130,7 @@ input[type=range] + .thumb.active .value {
   background:  linear-gradient(270deg, #42AD77 0%, #0072A4 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #3B3B3B5C;
 }
+
+.krishn_btn {
+  box-shadow: 0px 5px 11px #0000004A;
+}

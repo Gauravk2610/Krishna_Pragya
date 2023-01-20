@@ -177,10 +177,10 @@ const Footer = () => {
         <img
           className="w-32 md:w-60 object-contain"
           draggable={false}
-          src="/assets/Pragyanam.png"
+          src={`/assets/${isLang ? 'Pragyanam.png' : 'PragyanamHindi.png'}`}
           alt="Pragyanam"
         />
-        <div className="flex flex-col items-center gap-x-6">
+        <div className="flex flex-row items-center gap-x-6">
           <div className="text-[10px] sm:text-base">{isLang ? "Follow on Social" : "सोशल पर फॉलो करें"}</div>
           {/* Ṣocial Media Icons */}
           <div className="flex space-x-3">
@@ -188,7 +188,7 @@ const Footer = () => {
               <a key={index} href={item.link} target="_blank" rel="noreferrer">
                 <img
                   draggable={false}
-                  className="w-6 h-6 md:w-auto md:h-auto"
+                  className="w-5 h-5 md:w-auto md:h-auto"
                   src={`/assets/icons/${item.icon}`}
                   alt={item.name}
                 />

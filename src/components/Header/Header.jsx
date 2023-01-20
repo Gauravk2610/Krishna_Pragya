@@ -24,7 +24,7 @@ const Header = () => {
     },
     {
       name: isEng ? "Krishna Pragya" : 'कृष्ण प्रज्ञा',
-      link: "/krishn-pragya",
+      link: "/#krishn-pragya",
     },
     {
       name: isEng ? "Conversations" : 'बात-चित',
@@ -270,7 +270,7 @@ const Header = () => {
         <img
           className="select-none h-24 w-full  max-w-xs object-contain"
           draggable={false}
-          src="/assets/Logo.png"
+          src={`/assets/${isEng ? 'Logo.png' : 'Logo Hindi.png'}`}
           alt="krishna Pragya"
         />
       </Link>

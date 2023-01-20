@@ -149,7 +149,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        id=""
+        id="krishn-pragya"
         className="section3 min-h-screen pt-20 pb-16 flex items-center justify-start h-full"
       >
         <div className="sm:w-1/2 flex justify-center">

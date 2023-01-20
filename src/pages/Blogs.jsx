@@ -8,7 +8,7 @@ const Blogs = () => {
   const isEng = isEnglish(language);
 
   return (
-    <div className="bg-white py-12">
+    <div className="bg-white py-12 min-h-screen">
       <div className="max-w-7xl w-full px-4 xl:mx-auto">
         <h1 className="uppercase text-[#2E6295] text-4xl font-bold">
           {isEng ? "WHITE WINGS (BLOG)" : "श्वेत पंख (ब्लॉग)"}

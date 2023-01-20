@@ -23,7 +23,7 @@ const Connect = () => {
                 alt=""
               />
               <div className="text-xs">
-                {isEng ? "" : "सौजन्य - हरि ओम सिंग"}
+                {isEng ? "Courtesy - Hari Om Singh" : "सौजन्य - हरि ओम सिंग"}
               </div>
             </div>
             <div>
