@@ -141,6 +141,16 @@ const Footer = () => {
       link: "https://www.facebook.com/profile.php?id=100085928155035",
       icon: "Facebook.svg",
     },
+    {
+      name: "Quora",
+      link: "https://www.quora.com/profile/Krishn-Pragya?ch=10&oid=1965942544&share=29052207&srid=hBegs4&target_type=user",
+      icon: "quora.png",
+    },
+    {
+      name: "Koo",
+      link: "https://www.kooapp.com/profile/krishnpragya",
+      icon: "koo.png",
+    },
   ];
   return (
     <div className="linear-bg flex flex-col py-14 px-4 md:px-16 text-white">
