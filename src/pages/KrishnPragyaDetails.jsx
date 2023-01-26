@@ -44,7 +44,7 @@ const KrishnPragyaDetails = () => {
             </span>
           </div>
         </div>
-        <div className="space-y-6 xl:w-3/5 flex flex-col h-auto justify-center xl:-mt-16">
+        <div className={`space-y-6 xl:w-3/5 ${isEng ? 'mt-6' : 'pt-16' } flex flex-col h-auto justify-center xl:-mt-16`}>
           <p className={`text-[#154A6D] text-lg xl:text-xl font-semibold whitespace-pre-wrap ${!isEng ? '!leading-[42px] -mt-20' : '!leading-[30px]'}`}
           
           >
