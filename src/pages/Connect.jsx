@@ -19,7 +19,7 @@ const Connect = () => {
             <div>
               <img
                 className="max-w-[380px] w-full h-full object-cover"
-                src="/assets/connect/hand.png"
+                src="/assets/connect/Hand.png"
                 alt=""
               />
               <div className="text-xs">

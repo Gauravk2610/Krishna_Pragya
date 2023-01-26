@@ -157,7 +157,7 @@ const Footer = () => {
       <div className="flex flex-wrap sm:flex-row max-w-[85vw] lg:max-w-[80vw] sm:ml-auto w-full justify-between gap-x-6 gap-y-[26px] sm:gap-y-3">
         {/* Other Links */}
         {FooterListGroup.map((item, index) => (
-          <ul key={index} className="space-y-2 last:mr-auto last:w-max last:ml-4 sm:last:mr-0 sm:last:ml-0">
+          <ul key={index} className="space-y-2 last:mr-auto last:w-max">
             {item.group.map((item, index) => (
               <li key={index} className="capitalize">
                 <Link
@@ -183,7 +183,7 @@ const Footer = () => {
         <div className="flex flex-row items-center gap-x-6">
           <div className="text-[10px] sm:text-base">{isLang ? "Follow on Social" : "सोशल पर फॉलो करें"}</div>
           {/* Ṣocial Media Icons */}
-          <div className="flex space-x-3">
+          <div className="flex space-x-1 sm:space-x-3">
             {SocialMediaIcon.map((item, index) => (
               <a key={index} href={item.link} target="_blank" rel="noreferrer">
                 <img
