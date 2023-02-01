@@ -128,7 +128,7 @@ const Footer = () => {
     },
     {
       name: "Linkedin",
-      link: "https://www.linkedin.com/company/pragyanam/",
+      link: "https://www.linkedin.com/in/krishn-pragya-817808254",
       icon: "Linkedin.svg",
     },
     {
